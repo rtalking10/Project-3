@@ -1,3 +1,6 @@
+#Combines the retrive file and the read file to answer marketing's requests
+from os.path import exists as exist
+
 #Creates a local copy of the log if it doesn't already exist
 if not exist('local_copy.log'):
     from urllib.request import urlretrieve
